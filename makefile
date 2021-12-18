@@ -1,4 +1,4 @@
-all: full_client forking_server
+all: client server
 
 
 client: basic_client.o pipe_networking.o
