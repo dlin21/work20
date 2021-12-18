@@ -43,7 +43,7 @@ int server_handshake(int *to_client) {
     return 0;
   }
   
-  printf"sending ack.../n");
+  printf("sending ack.../n");
   err = write(*to_client, ACK, sizeof(ACK));
   if(err == -1){
     printf("error: %s\n", strerror(errno));
@@ -58,7 +58,7 @@ int server_handshake(int *to_client) {
     return 0;
   }
   if(strcmp(cm, ACK) != 0){
-    printf"handshake failed...\n");
+    printf("handshake failed...\n");
     return 0;
   }
   
